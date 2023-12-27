@@ -114,6 +114,13 @@
             <select class="text_color" name="category" required="">
                 <option>shirt</option>
                 <option value="" selected="">Add a Category here</option>
+
+                @foreach($category as $category)
+
+                <option value="{{$category->category_name}}">
+                {{$category->category_name}}</option>
+
+                @endforeach
             </select>
             
             </div>
